@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <!-- <script src="mathAPI.js"></script> -->
+</head>
+
+<body>
+    <nav class="navbar nav-pills navbar-expand-sm">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="quadratic.html">Solve Quadratic</a>
+        <a class="nav-link active" href="mathAPI.html">External API</a>
+    </nav>
+    <header class="jumbotron">
+        <div class="row">
+            <div>
+                <h1>Let's link a form to an External Math API</h1>
+            </div>        
+        </div>
+    </header>
+    <main class="container">
+        <!-- <div class="row">
+            <div class="col-6">
+                <h1>Input Form Here</h1>
+                <button id="mathExternalAPI" type="submit">Answer To External API </button>
+            </div>
+            <div id="mathAPIAnswer">
+
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-6">
+                <h1>Input Form Here</h1>
+                <form method="GET" action="http://api.mathjs.org/v4/?">
+                    <label for="expr">Input1 = </label>
+                    <input name="expr" id="expression">
+                    <button id="mathExternalAPI" type="submit">Answer To External API </button>
+                </form>
+                
+            </div>
+            <div id="mathAPIAnswer">
+
+            </div>
+        </div>
+    </main>
+    <br>
+
+
+
+   
+</body>
+
+</html>
