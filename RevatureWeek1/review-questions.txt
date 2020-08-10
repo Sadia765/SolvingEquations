@@ -1,0 +1,65 @@
+Client Side:
+What is HTML? Is it a programming language? markup language, not a programming language because it's only read, no computations can be done in it...
+What are some tags in HTML? What tags are required?
+What is the syntax for a making a tag?
+What are some attributes tags can have?
+How do we take user input with HTML? //HTML forms
+What are some examples of input elements?
+What ways can I send that info to a url?
+What is CSS? What is it's role in the browser?
+What ways can we apply style to an element?
+How can we select elements to be styled?
+What are some examples of css attributes?
+What is the box model?
+How does CSS selector precedence work?
+What is Bootstrap?
+How does the Bootstrap grid system work?
+What is JavaScripts role in the browser? js makes web dynamic? do whatever you want..
+What is the DOM? It's structure?
+How can we find html elements in js?
+How do I use js to respond to events?
+How can I send an http request to a url?
+How can we change event's default functionality?
+How can we make a new element? Add it to the tree?
+innerText vs innerHtml?
+What are events? Some examples?
+What is bubbling? Capturing?
+
+JavaScript:
+What is es6?
+What does it stand for?
+What does it mean for javascript?
+How do we make a variable in javascript?
+What are the scopes of variables?
+Which variables have which scopes?
+What are the types of javascript?
+What are the differences between types for no value?
+How do we make strings in javascript?
+How do we declare a function in javascript?
+Where can we declare a function in javascript?
+How do function params work?
+What are default Params, ...params?
+What is pass by value? How does it work?
+What is a callback function?
+Difference between synchronous and asynchronous?
+How do we do flow control in javascript?
+What operators do our expressions have?
+== vs ===?
+What are truthy falsey values?
+What are short circuit operators?
+What are the guard and default operators?
+How can we make objects in javascript?
+How to add fields after they exist?
+What is prototypical inheritance?
+How do arrays work in javascript?
+What are methods we use with arrays?
+How does arrays sizing work?
+What is functional programming?
+What are first class functions, pure functions?
+Why do we want immutable data?
+What is a closure in javascript?
+What are the 4 steps to get one?
+What can we use them for?
+What are the pieces that give javascript its asynchronous nature?
+How do those pieces work together?
+Do we have multithreading in javascript?

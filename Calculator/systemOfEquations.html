@@ -8,43 +8,55 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
         integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-    <script src="add.js"></script>
+    <script src="systemOfEqns.js"></script>
 </head>
 
 <body>
     <nav class="navbar nav-pills navbar-expand-sm">
-        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="quadratic.html">Solve Quadratic</a>
-        <a class="nav-link" href="systemOfEquations.html">Solving A System of Equations</a>
+        <a class="nav-link active" href="systemOfEquations.html">Solving A System of Equations</a>
         <a class="nav-link" href="mathAPI.html">External API</a>
     </nav>
     <header class="jumbotron">
         <div class="row">
             <div>
-                <h1>Add 3 Numbers On this Page</h1>
+                <h1>Let's solve a system of two linear equations</h1>
             </div>        
         </div>
     </header>
     <main class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12">
                 <label>a = </label>
                 <input id="aInput" type="number">
-                <br>
+                <!-- <br> -->
                 <label>b = </label>
                 <input id="bInput" type="number">
-                <br>
+                <!-- <br> -->
                 <label>c = </label>
                 <input id="cInput" type="number">
                 <br>
-                <button id="addButton" type="submit">Add</button>
+                <label>d = </label>
+                <input id="dInput" type="number">
+                <!-- <br> -->
+                <label>e = </label>
+                <input id="eInput" type="number">
+                <!-- <br> -->
+                <label>f = </label>
+                <input id="fInput" type="number">
+                <br>
+                <button id="systemButton" type="submit">Solve System Of Equations</button>
             </div>
-            <div id="addAnswer">
+            <div id="solveSystem">
 
             </div>
         </div>
     </main>
-    <br>   
+    <br>
+  
+
+   
 </body>
 
 </html>

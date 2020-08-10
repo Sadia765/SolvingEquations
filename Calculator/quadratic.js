@@ -24,7 +24,9 @@ function quadratic(){
         const x2 = '(' + (-b).toString() + ' - \sqrt(' + discriminantStr +')i)/' + (2*a);
         console.log(x1);
         console.log(x2);
-        quadraticAnswerDiv.innerHTML = 'Answer is imaginary. The discriminant is '+ discriminant + '<br> The answer is x = '+ x1 +'<br> or <br> x = '+x2;
+        quadraticAnswerDiv.innerHTML = `Given: ${a}x^2 + ${b}x + ${c} = 0 <br> 
+        Answer is imaginary because the discriminant, -b-4*a*c, is ${discriminant} 
+        <br> The answer is x = ${x1} <br> or <br> x = ${x2}`;
     }
     else{
         discriminantStr = discriminant.toString();
@@ -32,7 +34,9 @@ function quadratic(){
         const x2 = '(' + (-b).toString() + ' - \sqrt(' + discriminantStr +'))/' + (2*a);
         console.log(x1);
         console.log(x2);
-        quadraticAnswerDiv.innerHTML = 'Answer is real. The discriminant is ' + discriminant + '<br> The answer is x = '+ x1 +'<br> or <br> x = '+x2;
+        quadraticAnswerDiv.innerHTML = `Given: ${a}x^2 + ${b}x + ${c} = 0 <br>
+        Answer is real because the discriminant, -b-4*a*c, is ${discriminant}
+        <br> The answer is x = ${x1} <br> or <br> x = ${x2}`;
     }
     
     

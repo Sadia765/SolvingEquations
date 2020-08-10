@@ -1,0 +1,28 @@
+main{
+    background-color: antiquewhite;
+    border: 2px solid maroon;
+    width:  400px;
+    padding:  10px;
+}
+
+div{
+    background-color: yellow;
+    border: 5px dashed orange;
+    height: 200px;
+    width: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+span{
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+img{
+    border: 5px solid orange;
+    height: 100px;
+    width: 300px;
+    margin-bottom: 25px;
+    
+}
