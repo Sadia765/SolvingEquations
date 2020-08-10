@@ -8,7 +8,7 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
         integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-    <!-- <script src="mathAPI.js"></script> -->
+    <script src="mathAPI.js"></script>
 </head>
 
 <body>
@@ -25,20 +25,19 @@
         </div>
     </header>
     <main class="container">
-        <!-- <div class="row">
-            <div class="col-6">
-                <h1>Input Form Here</h1>
-                <button id="mathExternalAPI" type="submit">Answer To External API </button>
-            </div>
-            <div id="mathAPIAnswer">
-
-            </div>
-        </div> -->
         <div class="row">
             <div class="col-6">
-                <h1>Input Form Here</h1>
+                <p>Here, I hard coded the buttun to get the answer of 2*(7-3) using fetch and .then.</p>
+                <button id="hardCodedMathExternalAPI" type="submit">Answer To 2*(7-3) </button>
+                <div id="hardCodedmathAPIAnswer">
+
+                </div>
+            </div>
+            
+            <div class="col-6">
+                <p>Input a math expression in the form below.</p>
                 <form method="GET" action="http://api.mathjs.org/v4/?">
-                    <label for="expr">Input1 = </label>
+                    <label for="expr">Input = </label>
                     <input name="expr" id="expression">
                     <button id="mathExternalAPI" type="submit">Answer To External API </button>
                 </form>
@@ -47,6 +46,22 @@
             <div id="mathAPIAnswer">
 
             </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-6">
+                <h1>Input a math expression in the form below.</h1>
+                <form method="GET" action="http://api.mathjs.org/v4/?">
+                    <label for="expr">Input = </label>
+                    <input name="expr" id="expression">
+                    <button id="mathExternalAPI" type="submit">Answer To External API </button>
+                </form>
+                
+            </div>
+            <div id="mathAPIAnswer">
+
+            </div>
+            
+            </div> -->
         </div>
     </main>
     <br>
