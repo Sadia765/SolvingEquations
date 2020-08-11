@@ -93,8 +93,8 @@ function quadratic() {//Let's consider edge cases.
         }
         else {//discParity ===0 discriminant is 0, so considering -b/2a
             if ((b % (2 * a)) === 0) {
-                x1 = (b / (2 * a)).toString();
-                x2 = (b / (2 * a)).toString();
+                x1 = (-b / (2 * a)).toString();
+                x2 = (-b / (2 * a)).toString();
             }
             else { //no square root in answer and don't simplify
                 x1 = (-b).toString() + '/' + (2 * a).toString();
