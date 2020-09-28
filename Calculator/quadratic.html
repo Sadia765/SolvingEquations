@@ -31,16 +31,30 @@
     </header>
     <!-- <br> -->
     <main class="container">
-        <div class="col-12">
-            <label>a = </label>
-            <input id="coefXSqrd" type="number">
-            <!-- <br> -->
-            <label>b = </label>
-            <input id="coefX" type="number">
-            <!-- <br> -->
-            <label>c = </label>
-            <input id="constant" type="number">
-            <br>
+        <!-- <div class="input-group mb-3">
+           
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+              <span class="input-group-text">.00</span>
+            </div>
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          </div> -->
+        <div class="input-group mb-3">
+            <input id="coefXSqrd" type="number" class="form-control" placeholder="a">
+            <div class="input-group-append">
+                <span class="input-group-text">x<sup>2</sup> + </span>
+            </div>
+            <input id="coefX" type="number" class="form-control" placeholder="b">
+            <div class="input-group-prepend">
+                <span class="input-group-text">x + </span>
+            </div>
+            <input id="constant" type="number" class="form-control" placeholder="c">
+            <div class="input-group-append">
+                <span class="input-group-text"> = 0 </span>
+            </div>
             <button id="quadraticButton" type="submit" class="btn btn-outline-primary">Solve For Me</button>
         </div>
         <div id="quadraticAnswer">
