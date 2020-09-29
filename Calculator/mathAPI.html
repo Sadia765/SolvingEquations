@@ -43,27 +43,6 @@
           class="form-control"
           placeholder="Expression"
         />
-
-        <!-- Using Forms redirects to another page and shows the response there -->
-        <!-- <form method="GET" action="http://api.mathjs.org/v4/?"> -->
-        <!-- Originally was "GET" Request -->
-        <!-- <div>
-                <input name="expr" id="expression" class="form-control" placeholder="Expression">
-                <button id="mathExternalAPI" type="submit" class="btn btn-outline-primary">Simplify Expression For Me</button>
-            </div> -->
-
-        <!-- </form> -->
-
-        <!-- Hard coded a button. This uses HTTP Request and shows it on the page as desired! -->
-        <!-- </div>
-                  <div class="row">
-                    <div class="col-6">
-                        <p>Here, I hard coded the buttun to get the answer of 2*(7-3) using fetch and .then.</p>
-                        <button id="hardCodedMathExternalAPI" type="submit" class="btn btn-outline-primary">Answer To 2*(7-3) </button>
-                    <div id="hardCodedmathAPIAnswer">
-
-                    </div>
-            </div> -->
       </div>
       <div>
         <button
@@ -73,11 +52,19 @@
         >
           Simplify Expression For Me
         </button>
+        <button id="useNewton" type="submit" class="btn btn-outline-primary">
+          Use Newton To Simplify
+        </button>
+        <button id="evaluator" type="submit" class="btn btn-outline-primary">
+          Use Evaluator to Simplify Expression For Me
+        </button>
       </div>
       <div id="mathAPIAnswer">
         <!-- Hard coded button response shows up here -->
       </div>
       <div id="simplifiedExpr"></div>
+      <div id="simplifiedExprWithNewton"></div>
+      <div id="simplifiedWithEvaluator"></div>
     </main>
     <footer id="keepAtBottom" class="page-footer font-small blue">
       <!-- Footer Links -->
