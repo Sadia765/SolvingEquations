@@ -1,10 +1,12 @@
 console.log("script loaded");
 
 window.onload = function () {
-  // const buttonExternalAPI = document.getElementById("hardCodedMathExternalAPI");
-  // buttonExternalAPI.addEventListener("click", linkToAPI);
   const buttonMathExternalAPI = document.getElementById("mathExternalAPI");
-  buttonMathExternalAPI.addEventListener("click", simplificationOnScreen);
+  buttonMathExternalAPI.addEventListener("click", simplificationOnScreen); //used to use function simplificationOnScreen
+  // const buttonNewton = document.getElementById("useNewton");
+  // buttonNewton.addEventListener("click", useNewtonAPI);
+  const buttonEvaluator = document.getElementById("evaluator");
+  buttonEvaluator.addEventListener("click", useEvaluatorFunction);
 };
 
 function linkToAPI(e) {
@@ -40,4 +42,35 @@ function simplificationOnScreen() {
         responseConverted +
         "</h4>";
     });
+}
+
+function useNewtonAPI() {
+  const AnswerGoesHere = document.getElementById("simplifiedExprWithNewton");
+  const toSimplify = document.getElementById("expression").value;
+  console.log(toSimplify);
+  const correctForm = encodeURIComponent(toSimplify);
+  console.log(typeof correctForm);
+
+  const url = "https://newton.now.sh/simplify/" + correctForm;
+  fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((responseConverted) => {
+      console.log(responseConverted);
+      AnswerGoesHere.innerHTML =
+        "<h4>After simplifying, the expression becomes " +
+        responseConverted +
+        "</h4>";
+    });
+}
+
+function useEvaluatorFunction() {
+  const mexp = require("math-expression-evaluator");
+  const answer = document.getElementById("simplifiedWithEvaluator");
+  const toSimplify = document.getElementById("expression").value;
+  console.log(toSimplify);
+  const simplified = mexp.eval(toSimplify);
+  answer.innerHTML =
+    "<h4>After simplifying, the expression becomes " + simplified + "</h4>";
 }
