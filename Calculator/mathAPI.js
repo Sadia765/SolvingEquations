@@ -5,8 +5,8 @@ window.onload = function () {
   buttonMathExternalAPI.addEventListener("click", simplificationOnScreen); //used to use function simplificationOnScreen
   // const buttonNewton = document.getElementById("useNewton");
   // buttonNewton.addEventListener("click", useNewtonAPI);
-  const buttonEvaluator = document.getElementById("evaluator");
-  buttonEvaluator.addEventListener("click", useEvaluatorFunction);
+  // const buttonEvaluator = document.getElementById("evaluator");
+  // buttonEvaluator.addEventListener("click", useEvaluatorFunction);
 };
 
 function linkToAPI(e) {
