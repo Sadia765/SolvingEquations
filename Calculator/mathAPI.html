@@ -1,60 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
-        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
     <script src="mathAPI.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar nav-pills navbar-expand-sm">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="quadratic.html">Solve Quadratic</a>
-        <a class="nav-link" href="systemOfEquations.html">Solving A System of Equations</a>
-        <a class="nav-link active" href="mathAPI.html">External API</a>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="quadratic.html">Solve Quadratic</a>
+      <a class="nav-link" href="systemOfEquations.html"
+        >Solving A System of Equations</a
+      >
+      <a class="nav-link active" href="mathAPI.html">Simplify</a>
     </nav>
     <header class="jumbotron">
-        <div class="row">
-            <div>
-                <h1>Let's link a form to an External Math API</h1>
-            </div>        
+      <div class="row">
+        <div>
+          <h1>Simplify An Expression</h1>
+          <p>Input any expression that you would like to simplify.</p>
         </div>
+      </div>
     </header>
     <main class="container">
-        <div class="row">
-            <div class="col-6">
-                <p>Here, I hard coded the buttun to get the answer of 2*(7-3) using fetch and .then.</p>
-                <button id="hardCodedMathExternalAPI" type="submit">Answer To 2*(7-3) </button>
-                <div id="hardCodedmathAPIAnswer">
+      <div>
+        <h4>Given:</h4>
+      </div>
+      <div class="input-group mb-3">
+        <input
+          name="expr"
+          id="expression"
+          class="form-control"
+          placeholder="Expression"
+        />
 
-                </div>
-            </div>
-            
-            <div class="col-6">
-                <p>Input a math expression in the form below.</p>
-                <form method="GET" action="http://api.mathjs.org/v4/?">
-                    <label for="expr">Input = </label>
-                    <input name="expr" id="expression">
-                    <button id="mathExternalAPI" type="submit">Answer To External API </button>
-                </form>
-                
-            </div>
-            <div id="mathAPIAnswer">
+        <!-- Using Forms redirects to another page and shows the response there -->
+        <!-- <form method="GET" action="http://api.mathjs.org/v4/?"> -->
+        <!-- Originally was "GET" Request -->
+        <!-- <div>
+                <input name="expr" id="expression" class="form-control" placeholder="Expression">
+                <button id="mathExternalAPI" type="submit" class="btn btn-outline-primary">Simplify Expression For Me</button>
+            </div> -->
 
-            </div>
-        </div>
-        </div>
+        <!-- </form> -->
+
+        <!-- Hard coded a button. This uses HTTP Request and shows it on the page as desired! -->
+        <!-- </div>
+                  <div class="row">
+                    <div class="col-6">
+                        <p>Here, I hard coded the buttun to get the answer of 2*(7-3) using fetch and .then.</p>
+                        <button id="hardCodedMathExternalAPI" type="submit" class="btn btn-outline-primary">Answer To 2*(7-3) </button>
+                    <div id="hardCodedmathAPIAnswer">
+
+                    </div>
+            </div> -->
+      </div>
+      <div>
+        <button
+          id="mathExternalAPI"
+          type="submit"
+          class="btn btn-outline-primary"
+        >
+          Simplify Expression For Me
+        </button>
+      </div>
+      <div id="mathAPIAnswer">
+        <!-- Hard coded button response shows up here -->
+      </div>
+      <div id="simplifiedExpr"></div>
     </main>
-    <br>
-
-
-
-   
-</body>
-
+  </body>
 </html>
