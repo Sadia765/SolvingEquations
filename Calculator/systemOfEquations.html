@@ -21,48 +21,57 @@
       <a class="nav-link active" href="systemOfEquations.html"
         >Solving A System of Equations</a
       >
-      <a class="nav-link" href="mathAPI.html">External API</a>
+      <a class="nav-link" href="mathAPI.html">Simplify</a>
     </nav>
     <header class="jumbotron">
       <div class="row">
         <div>
-          <h1>Let's solve a system of two linear equations</h1>
+          <h1>Let's solve a System of Two Linear Equations</h1>
+          <p> A linear equation is of the form ax + by = c. Each equation of this form represents a line.</p>
+          <p>To solve it, we can use elimination or substitution.</p>
+           <p> Input the values for a, b, c, d, e, and f below. Then press `Solve System For Me` to get the solution!</p>
         </div>
       </div>
     </header>
     <main class="container">
-      <div class="row">
-        <div class="col-12">
-          <label>a = </label>
-          <input id="aInput" type="number" />
-          <!-- <br> -->
-          <label>b = </label>
-          <input id="bInput" type="number" />
-          <!-- <br> -->
-          <label>c = </label>
-          <input id="cInput" type="number" />
-          <br />
-          <label>d = </label>
-          <input id="dInput" type="number" />
-          <!-- <br> -->
-          <label>e = </label>
-          <input id="eInput" type="number" />
-          <!-- <br> -->
-          <label>f = </label>
-          <input id="fInput" type="number" />
-          <br />
-
-          <button
-            id="systemButton"
-            type="submit"
-            class="btn btn-outline-primary"
-          >
-            Solve System For Me
-          </button>
+        <div>
+            <h4>Given: </h4>
         </div>
-        <div id="solveSystem"></div>
-      </div>
+        <div>
+            <div class="input-group mb-3">
+                <input id="aInput" type="number" class="form-control" placeholder="a" />
+                <div class="input-group-append">
+                    <span class="input-group-text">x + </span>
+                </div>
+                <input id="bInput" type="number" class="form-control" placeholder="b" />
+                <div class="input-group-prepend">
+                    <span class="input-group-text">y = </span>
+                </div>
+                <input id="cInput" type="number" class="form-control" placeholder="c"/>
+            </div>
+            <div class="input-group mb-3">
+                <input id="dInput" type="number" class="form-control" placeholder="d"/>
+                <div class="input-group-append">
+                    <span class="input-group-text">x + </span>
+                </div>
+                <input id="eInput" type="number" class="form-control" placeholder="e"/>
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> y = </span>
+                </div>
+                <input id="fInput" type="number" class="form-control" placeholder="f"/>
+                
+            </div>
+        <div>
+        <div>
+            <button id="systemButton" type="submit" class="btn btn-outline-primary">
+                Solve System For Me
+            </button>
+        </div>
+        <div id="solveSystem">
+
+
+
+        </div>
     </main>
-    <br />
   </body>
 </html>
