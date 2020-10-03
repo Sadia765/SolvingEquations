@@ -13,7 +13,7 @@ function linkToAPI(e) {
   console.log(e);
   console.log("go to external API now!");
   const externalAPIAnswer = document.getElementById("hardCodedmathAPIAnswer");
-  fetch("http://api.mathjs.org/v4/?expr=2*(7-3)")
+  fetch("//api.mathjs.org/v4/?expr=2*(7-3)")
     .then((response) => {
       return response.json();
     })
@@ -29,8 +29,15 @@ function simplificationOnScreen() {
   console.log(toSimplify);
   const toSimplifyInCorrectForm = encodeURIComponent(toSimplify);
   console.log(typeof toSimplifyInCorrectForm);
+  //default to http so the code works locally as well!
+  let schemeProtocol = "http:";
+  if (window.location.protocol === "https:") {
+    schemeProtocol = "https:";
+  }
+  console.log(schemeProtocol);
 
-  const url = "http://api.mathjs.org/v4/?expr=" + toSimplifyInCorrectForm;
+  const url =
+    schemeProtocol + "//api.mathjs.org/v4/?expr=" + toSimplifyInCorrectForm;
   fetch(url)
     .then((response) => {
       return response.json();
