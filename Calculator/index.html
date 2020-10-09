@@ -7,12 +7,23 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- CSS only -->
     <link rel="stylesheet" href="main.css" />
+    <!-- to allow site to work and look the same locally, I included url with https 
+    can comment out when upload and uncomment when debugging locally-->
     <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+    <!-- Also added url without http or https, this way it will link to the url based on the 
+        base url, whether that is with http or https, it will automatically 
+    go to http and otherwise go to https-->
+    <!-- <link
       rel="stylesheet"
       href="//stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
       integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
       crossorigin="anonymous"
-    />
+    /> -->
     <!-- <script src="add.js"></script> -->
   </head>
 
@@ -90,48 +101,21 @@
         </div>
       </div>
     </main>
-    <footer class="page-footer font-small blue">
-      <!-- Footer Links -->
-      <div class="container text-center text-md-left">
-        <!-- Grid row -->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-md-3 mx-auto">
-            <!-- Links -->
-            <h5 class="font-weight-bold mt-3 mb-4">
-              <a href="https://www.linkedin.com/in/sadia765/">LinkedIn</a>
-            </h5>
-          </div>
-          <hr class="clearfix w-100 d-md-none" />
-          <!-- Grid column -->
-          <div class="col-md-3 mx-auto">
-            <!-- Links -->
-            <h5 class="font-weight-bold mt-3 mb-4">
-              <a href="https://github.com/Sadia765">GitHub</a>
-            </h5>
-          </div>
-          <!-- Grid column -->
-          <hr class="clearfix w-100 d-md-none" />
-          <!-- Grid column -->
-          <div class="col-md-3 mx-auto">
-            <!-- Links -->
-            <h5 class="font-weight-bold mt-3 mb-4">
-              <a href="https://sadia765.github.io/">GitHub Pages</a>
-            </h5>
-          </div>
-          <!-- Grid column -->
-          <hr class="clearfix w-100 d-md-none" />
-          <!-- Grid column -->
-          <div class="col-md-3 mx-auto">
-            <!-- Links -->
-            <h5 class="font-weight-bold mt-3 mb-4">
-              <a href="">sadia765@gmail.com</a>
-            </h5>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
+    <footer class="atBottom">
+      <!-- <h1>footer is here!</h1> -->
+      <a
+        class="btn btn-light"
+        href="https://www.linkedin.com/in/sadia765/"
+        role="button"
+        >LinkedIn</a
+      >
+      <a class="btn btn-light" href="https://github.com/Sadia765" role="button"
+        >GitHub</a
+      >
+      <a class="btn btn-light" href="https://sadia765.github.io/" role="button"
+        >GitHub Pages</a
+      >
+      <a class="btn btn-light" href="" role="button">sadia765@gmail.com</a>
     </footer>
   </body>
 </html>
